@@ -21,7 +21,7 @@ RUN chmod 600 /root/.ssh/id_rsa
 RUN echo "Host *\n\tStrictHostKeyChecking no\n\tUserKnownHostsFile=/dev/null" >> /root/.ssh/config
 
 # Clone your private repository
-RUN git clone git@github.com:dharanibeena123/your-repository.git /app
+RUN git clone https://github.com/dharanibeena123/Dockerize.git /app
 
 # Ensure dependencies are installed (optional for Java projects)
 # If you are using Maven, uncomment this line
